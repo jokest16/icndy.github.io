@@ -1,0 +1,108 @@
+/*@import ""сюда нужно всталть путь если конечный файл css не указываем расширения
+@import "bourbon"
+@import "vars.sass"
+@import "media"
+@import "app/libs/font-awesome/scss/font-awesome"
+.product
+  background: #fff
+  padding: 5% 0%
+  &-prew
+    list-style: none
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    text-transform: uppercase
+    font-family: 'ProximaNovaLight',sans-serif
+    &-item
+      position: relative
+      letter-spacing: 25px
+      transition: all 1s ease
+      margin-right: 60px
+      &:hover
+        transform: scale(1.1)
+        z-index: 999
+      &-right
+        position: relative
+        margin: 0 0 55px 0px
+        transition: all 1s ease
+        font-size: em(10px)
+        &:hover
+          transform: scale(1.1)
+          z-index: 999
+        span
+          position: absolute
+          left: 5%
+          bottom: 6%
+          font-size: em(40px)
+          color: $textColor
+          letter-spacing: 24px
+    .big
+      display: flex
+      img
+        width: 100%
+      span
+        position: absolute
+        left: 5%
+        bottom: 10%
+        font-size: em(55px)
+        color: $textColor
+    .right
+      display: flex
+      flex-flow: column
+      align-items: flex-end
+    .bottom
+      display: flex
+      flex-flow: row
+      margin-left: 3%
+      img
+        width: 100%
+      span
+        position: absolute
+        left: 10%
+        bottom: 5%
+        font-size: em(32px)
+        color: $textColor
+        letter-spacing: 15px
+.hashtag
+  background: url(../img/hashtag/bg.jpg) 50% 0 no-repeat
+  background-size: cover
+  padding: 20% 0
+  h2
+    text-align: center
+    color: $textColor
+    text-transform: uppercase
+    font-family: 'ProximaNovaLight', sans-serif
+    font-weight: normal
+    font-size: em(60px)
+    letter-spacing: 30px
+    cursor: pointer
+    span
+      color: $accentText
+      font-family: 'ProximaBold', sans-serif
+      letter-spacing: 10px
+      font-size: em(10px)
+      font-weight: bold
+footer
+  display: flex
+  align-items: baseline
+  justify-content: space-between
+  padding: 1% 4%
+  ul
+    display: flex
+    list-style: none
+    font-family: 'ProximaNovaBold',sans-serif
+    font-size: em(21px)
+    text-transform: uppercase
+    li
+      margin-right: 8%
+      letter-spacing: em(5px)
+  .social
+    display: flex
+    &-button
+      display: block
+      height: 29px
+      width: 30px
+      margin-left: 5px
+      transition: all .5s ease
+      &:hover
+        transform: scale(1.1)

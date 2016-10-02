@@ -1,0 +1,251 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  header
+    .top-pannel
+      .menu
+        margin: 5% 6% 0 3%
+        &-item
+          margin-left: 40px
+  .product
+    &-prew
+      padding: 0px!important
+      &-item
+        margin-right: 30px!important
+        &-right
+          margin-bottom: 40px!important
+          &:hover
+      .big
+        justify-content: center
+        span
+          font-size: em(50px)!important
+          letter-spacing: normal!important
+      .right
+        margin-top: 0
+      .bottom
+        span
+          letter-spacing: normal!important
+  footer
+    padding: 1% 2%!important
+    ul
+      font-size: em(2px)
+      li
+        margin-right: 5%!important
+        letter-spacing: em(2px)!important
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  header
+    .top-pannel
+      .logo
+        position: absolute
+        left: 0
+        top: 0
+        width: 200px!important
+      .menu
+        margin: 5% 0 0 40%
+        &-item
+          font-size: em(25px)!important
+          margin: 25px 0 0 15px
+    .triangle
+      margin-left: 45%
+  .product
+    &-prew
+      padding: 0px!important
+      &-item
+        margin-right: 20px!important
+        &-right
+          margin-bottom: 30px!important
+      .big
+        span
+          font-size: em(40px)!important
+      .bottom
+        span
+          font-size: em(20px)!important
+  footer
+    ul
+      font-size: em(17px)!important
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  header
+    .top-pannel
+      .logo
+        position: absolute
+        left: 0
+        top: 0
+        width: 100px!important
+      .menu
+        margin: 5% 0 0 40%
+        &-item
+          font-size: em(15px)!important
+          margin: 25px 0 0 15px
+    h1
+      font-size: em(30px)
+      margin-top: 400px
+    .triangle
+      margin-left: 43%
+  .product
+    &-prew
+      &-item
+        margin-right: 10px!important
+        &-right
+          margin-bottom: 30px!important
+          span
+            top: 60%
+      .big
+        span
+          font-size: em(25px)!important
+          bottom: 15%!important
+          left: 10%!important
+      .right
+      .bottom
+        margin-left: 1%!important
+        span
+          font-size: em(15px)!important
+  .hashtag
+    padding: 23% 0
+    h2
+      font-size: em(30px)!important
+  footer
+    ul
+      font-size: em(13px)!important
+    .social
+      &-button
+        margin-left: 2px!important
+  /*Disable Animation on Mobile Devices*/
+  .animated
+    /*CSS transitions*/
+    -o-transition-property: none !important
+    -moz-transition-property: none !important
+    -ms-transition-property: none !important
+    -webkit-transition-property: none !important
+    transition-property: none !important
+    /*CSS transforms*/
+    -o-transform: none !important
+    -moz-transform: none !important
+    -ms-transform: none !important
+    -webkit-transform: none !important
+    transform: none !important
+    /*CSS animations*/
+    -webkit-animation: none !important
+    -moz-animation: none !important
+    -o-animation: none !important
+    -ms-animation: none !important
+    animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  *
+    overflow-x: hidden
+  header
+    background-size: 1320px 1000px
+    padding-bottom: 100px!important
+    .top-pannel
+      .logo
+        position: absolute
+        left: -25%
+        top: -5%
+        width: 100px!important
+      .menu
+        margin: 10% 0 0 -3%
+        &-item
+          font-size: em(15px)!important
+          margin: 25px 0 0 15px
+    h1
+      font-size: em(30px)
+      margin-top: 350px
+    .triangle
+      margin-left: 38%
+      height: 62px
+  .product
+    &-prew
+      &-item
+        margin-right: 10px!important
+        &-right
+          margin-bottom: 30px!important
+          margin-right: 0px!important
+          span
+            top: 60%
+      .big
+        .product-prew-item
+          margin-right: 20px!important
+        img
+          height: 90%
+        span
+          font-size: em(19px)!important
+          bottom: 15%!important
+          left: 10%!important
+      .right
+      .bottom
+        margin-left: 1%!important
+        img
+          width: 100%!important
+        span
+          font-size: em(16px)!important
+  .hashtag
+    padding: 25% 15%!important
+    h2
+      font-size: em(12px)!important
+  footer
+    ul
+      font-size: em(13px)!important
+      flex-wrap: wrap
+    .social
+      align-self: center
+      &-button
+        width: 45px!important
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  header
+    background-size: 1320px 1000px
+    padding-bottom: 100px!important
+    .top-pannel
+      .logo
+        position: absolute
+        left: -25%
+        top: -5%
+        width: 100px!important
+      .menu
+        margin: 10% 0 0 0
+        &-item
+          font-size: em(12px)!important
+          margin: 25px 0 0 12px
+    h1
+      font-size: em(30px)
+      margin-top: 400px
+    .triangle
+      margin-left: 35%
+      height: 100px
+  .hashtag
+    padding: 25% 10%!important
+  footer
+    flex-flow: column
+    .social
+      align-self: center
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+    /**/
+
+
+
+/* Medium Devices, Desktops */
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/

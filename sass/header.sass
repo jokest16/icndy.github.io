@@ -1,0 +1,76 @@
+//верстка header
+@import "bourbon"
+@import "vars.sass"
+a
+  color: inherit
+  transition: all .5s ease
+  &:hover
+    text-decoration: none
+    color: $accentText
+header
+  background: url(../img/header/head-bg.jpg) 50% 0 no-repeat
+  background-size: cover
+  padding-bottom: 100px
+  .top-pannel
+    nav
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+    .logo
+      background: url(../img/header/logo.png) 50% 0 no-repeat
+      background-size: 100%
+      margin-top: 40px
+      margin-left: 100px
+      width: 224px
+      height: 90px
+    .menu
+      list-style: none
+      margin-right: 13%
+      margin-top: 75px
+      cursor: pointer
+      &-item
+        display: inline-block
+        margin-left: 40px
+        color: $textColor
+        font-family: 'ProximaNovaBold',sans-serif
+        font-size: em(23px)
+        text-transform: uppercase
+        transition: all .5s ease
+        &:hover
+          color: $accentText
+  h1
+    margin-top: 300px
+    text-align: center
+    color: $textColor
+    font-family: 'ProximaNovaLight',sans-serif
+    font-weight: lighter
+    text-transform: uppercase
+    font-size: em(60px)
+    letter-spacing: 12px
+    cursor: default
+    span
+      text-align: center
+      font-family: 'ProximaNovaBold',sans-serif
+      color: $accentText
+      font-size: em(15px)
+      cursor: pointer
+  .triangle
+    background: url(../img/header/arrow.png) 0 0 no-repeat
+    width: 83px
+    height: 43px
+    margin-left: 48%
+    cursor: pointer
+    margin-top: 271px
+    animation-name: move
+    animation-duration: 1.2s
+    animation-iteration-count: infinite
+    animation-timing-function: ease-in-out
+    &:hover
+      animation-play-state: paused
+  @keyframes move
+    0%
+      transform: translate(0px,0px)
+    50%
+      transform: translate(0px,20px)
+    100%
+      transform: translate(0px,0px)

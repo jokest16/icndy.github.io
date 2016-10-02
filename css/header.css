@@ -1,0 +1,103 @@
+a {
+  color: inherit;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  a:hover {
+    text-decoration: none;
+    color: #f84545; }
+
+header {
+  background: url(../img/header/head-bg.jpg) 50% 0 no-repeat;
+  background-size: cover;
+  padding-bottom: 100px; }
+  header .top-pannel nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  header .top-pannel .logo {
+    background: url(../img/header/logo.png) 50% 0 no-repeat;
+    background-size: 100%;
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 224px;
+    height: 90px; }
+  header .top-pannel .menu {
+    list-style: none;
+    margin-right: 13%;
+    margin-top: 75px;
+    cursor: pointer; }
+    header .top-pannel .menu-item {
+      display: inline-block;
+      margin-left: 40px;
+      color: #efefef;
+      font-family: 'ProximaNovaBold',sans-serif;
+      font-size: 1.4375em;
+      text-transform: uppercase;
+      -webkit-transition: all .5s ease;
+      transition: all .5s ease; }
+      header .top-pannel .menu-item:hover {
+        color: #f84545; }
+  header h1 {
+    margin-top: 300px;
+    text-align: center;
+    color: #efefef;
+    font-family: 'ProximaNovaLight',sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 3.75em;
+    letter-spacing: 12px;
+    cursor: default; }
+    header h1 span {
+      text-align: center;
+      font-family: 'ProximaNovaBold',sans-serif;
+      color: #f84545;
+      font-size: 0.9375em;
+      cursor: pointer; }
+  header .triangle {
+    background: url(../img/header/arrow.png) 0 0 no-repeat;
+    width: 83px;
+    height: 43px;
+    margin-left: 48%;
+    cursor: pointer;
+    margin-top: 271px;
+    -webkit-animation-name: move;
+            animation-name: move;
+    -webkit-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+    header .triangle:hover {
+      -webkit-animation-play-state: paused;
+              animation-play-state: paused; }
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  50% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px); }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
+
+@keyframes move {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  50% {
+    -webkit-transform: translate(0px, 20px);
+            transform: translate(0px, 20px); }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); } }
